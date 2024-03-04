@@ -1,34 +1,35 @@
+import '../styles/Footer.scss';
+
 function Footer(){
     return(
         <>
             <footer>
-                <h3>CONTATOS</h3>
-                <br /><hr /><br />
+                <h2>CONTATOS</h2>
+                <hr />
 
-                
                 <div className="redeSociais">
                     
-                    <a href="">
+                    <a target='_blank' href="https://www.linkedin.com/in/higorvl/">
                         <div>
-                            <img src="" alt="" />
+                            <img src="src\assets\linkedin-original.svg" alt='logo linkedin'/>
                             <br /><p>Linkedin</p>
-                            <br /><p>Higor Vital Lopo</p>
+                            <p>Higor Vital Lopo</p>
                         </div>
                     </a>
 
-                    <a href="">
+                    <a target='_blank' href="https://higor-vl.itch.io">
                         <div>
-                            <img src="" alt="" />
+                            <img src="src\assets\itch-io-icon.png" alt="logo itch.io" />
                             <br /><p>Itch.io</p>
-                            <br /><p>@Higor-vl</p>
+                            <p>@Higor-vl</p>
                         </div>
                     </a>
 
-                    <a href="">
+                    <a target='_blank' href="https://github.com/Higor335/">
                         <div>
-                            <img src="" alt="" />
+                            <img src="src\assets\github-original.svg" alt="logo github" />
                             <br /><p>GitHub</p>
-                            <br /><p>@Higor335</p>
+                            <p>@Higor335</p>
                         </div>
                     </a>
 

@@ -1,0 +1,58 @@
+header {
+    position: fixed;
+    background-color: rgb(0, 0, 68);
+    width: 100%;
+    height: 10%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+      margin-left: 2rem;
+      max-width: 100px; /* Ajuste o tamanho máximo da imagem conforme necessário */
+  }
+  
+  .botoesCabecalho {
+      margin-left: 60%;
+      display: flex;
+      flex-direction: row;
+      gap: 5em;
+      height: 3em;
+  }
+
+  button{
+    width: 150px;
+  }
+  
+
+  @media (max-width: 700px) {
+
+    header {
+        height: auto; /* Ajusta a altura automaticamente com base no conteúdo */
+        padding: 10px; /* Adiciona espaço interno para os botões */
+        flex-direction: column; /* Altera a direção da flexão para uma coluna */
+        align-items: flex-start; /* Alinha os itens à esquerda */
+      }
+    
+      .logo {
+        margin-top: 20px;
+        margin-left: 50%; /* Remove a margem esquerda da imagem */
+        margin-bottom: 10px; /* Adiciona espaçamento inferior à imagem */
+        transform: translate(-50%,-50%);
+      }
+    
+      .botoesCabecalho {
+        align-items: center;
+        margin-left: -4px; /* Remove a margem esquerda dos botões */
+        gap: 0.2em; /* Reduza o espaçamento entre os botões */
+        width: 97%; /* Define a largura total para os botões */
+        margin-bottom: 7px;
+      }
+
+      .botoesCabecalho:last-child{
+        margin-right: 25px;
+      }
+
+  }
