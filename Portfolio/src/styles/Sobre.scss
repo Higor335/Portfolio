@@ -43,17 +43,15 @@
                 text-align: justify;
                 line-height: 2em;
                 font-size: 2.1vh;
-                // Primeira palavra em verde
+                
                 .strong-green {
                     color: rgb(20, 212, 3);
                 }
                 
-                // Segunda palavra em azul piscina claro
                 .strong-light-blue {
                     color: rgb(135, 206, 235);
                 }
                 
-                // Terceira palavra em roxo escuro
                 .strong-dark-purple {
                     color: rgb(169, 58, 248);
                 }  
@@ -65,37 +63,37 @@
 @media (max-width: 700px) {
 
     .sobre {
-      height: 75vh; /* Diminuir a altura */
-      margin-top: -26px; /* Ajustar a margem superior */
+      height: 75vh; 
+      margin-top: -26px; 
   
         h2 {
-          font-size: 1.8em; /* Diminuir o tamanho da fonte do h2 */
-          padding-top: 1em; /* Ajustar o espaçamento superior */
+          font-size: 1.8em; 
+          padding-top: 1em; 
           margin-bottom: -10px;
         }
     
         hr {
-          width: 60%; /* Ajustar a largura da linha */
+          width: 60%; 
         }
     
         .bloco {
-          flex-direction: column; /* Mudar para layout de coluna */
-          align-items: center; /* Centralizar itens */
-          text-align: center; /* Centralizar texto */
+          flex-direction: column; 
+          align-items: center; 
+          text-align: center; 
     
           .minhaFoto {
-            width: 10em; /* Diminuir o tamanho da imagem */
+            width: 10em; 
             height: 11em;
-            margin: 0; /* Remover margens laterais */
-            margin-bottom: -2em; /* Adicionar margem inferior */
+            margin: 0; 
+            margin-bottom: -2em; 
           }
     
           .blocoTexto {
-            width: 80%; /* Ajustar a largura do bloco de texto */
+            width: 80%;
     
               p {
-                font-size: 0.9em; /* Diminuir o tamanho da fonte do parágrafo */
-                line-height: 1.5em; /* Ajustar o espaçamento entre linhas */
+                font-size: 0.9em; 
+                line-height: 1.5em; 
               }
           }
         }
