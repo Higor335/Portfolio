@@ -2,7 +2,7 @@ header {
     position: fixed;
     background-color: rgb(0, 0, 68);
     width: 100%;
-    height: 10%;
+    height: 10vh;
     top: 0;
     left: 0;
     display: flex;
@@ -10,16 +10,19 @@ header {
   }
   
   .logo {
-      margin-left: 2rem;
-      max-width: 100px; /* Ajuste o tamanho máximo da imagem conforme necessário */
+      margin-left: 3rem;
+      max-width: 7vh; /* Ajuste o tamanho máximo da imagem conforme necessário */
+      color: blue;
+      border-radius: 2rem;
   }
   
   .botoesCabecalho {
-      margin-left: 60%;
+      margin-left: auto;
+      margin-right: 2rem;
       display: flex;
       flex-direction: row;
-      gap: 5em;
-      height: 3em;
+      gap: 5vw;
+      height: 7vh;
   }
 
   button{
@@ -33,14 +36,16 @@ header {
         height: auto; /* Ajusta a altura automaticamente com base no conteúdo */
         padding: 10px; /* Adiciona espaço interno para os botões */
         flex-direction: column; /* Altera a direção da flexão para uma coluna */
-        align-items: flex-start; /* Alinha os itens à esquerda */
+        align-items: center; /* Alinha os itens à esquerda */
       }
     
       .logo {
-        margin-top: 20px;
-        margin-left: 50%; /* Remove a margem esquerda da imagem */
-        margin-bottom: 10px; /* Adiciona espaçamento inferior à imagem */
+        height: 5vh;
+        margin-top: 25px;
+        margin-bottom: -30px;
+        margin-left: 50%;
         transform: translate(-50%,-50%);
+        border-radius: 0;
       }
     
       .botoesCabecalho {

@@ -1,0 +1,30 @@
+.inicio{
+    position: fixed;
+    width: 100%;
+    top: 10vh;
+    left: 0;
+    background-color: #006494;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+    .perfil{
+        display: block;
+        margin-right: 5em;
+
+        .nome{
+            font-size: 4em;
+            margin-bottom: -10px;
+        }
+    
+        .cargo{
+            font-size: 2em;
+            color: rgb(192, 192, 0);
+        }
+    }
+
+    .imagem{
+        width: 20em;
+    }
+}

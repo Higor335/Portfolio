@@ -1,10 +1,10 @@
 import "../styles/Header.scss"
 
-function Header(){
+export default function Header(){
     return(
         <>
             <header>
-                <img src="" alt="logo" className="logo"/>
+                <a href=""><img src="src\assets\icone.png" alt="logo" className="logo"/></a>
                 <div className="botoesCabecalho">
                     <button>Inicio</button>
                     <button>Sobre</button>
@@ -15,5 +15,3 @@ function Header(){
         </>
     )
 }
-
-export default Header;
