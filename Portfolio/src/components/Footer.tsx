@@ -4,7 +4,7 @@ export default function Footer(){
     return(
         <>
             <footer id='contatos'>
-                <h2>CONTATOS</h2>
+                <br /><h2>CONTATOS</h2>
                 <hr />
 
                 <div className="redeSociais">

@@ -2,7 +2,6 @@ import "../styles/Sobre.scss"
 
 export default function Sobre(){
     return (
-        <>
             <div id="sobre">
                 <h2>SOBRE MIM</h2>
                 <br /><hr /><br />
@@ -32,6 +31,5 @@ export default function Sobre(){
                     <img src="" alt="" />
                 </div>
             </div>
-        </>
     )
 }

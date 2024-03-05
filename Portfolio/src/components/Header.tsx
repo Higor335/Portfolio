@@ -3,7 +3,7 @@ import "../styles/Header.scss"
 export default function Header(){
 
     function scroLento(target: string){
-        const headerHeight = 65;
+        const headerHeight = 95;
         const element = document.querySelector(target);
         if (element) {
             const topOffset = (element as HTMLElement).offsetTop - headerHeight;
