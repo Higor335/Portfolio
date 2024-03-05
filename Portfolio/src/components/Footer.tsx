@@ -13,7 +13,7 @@ export default function Footer(){
                         <div>
                             <img src="src\assets\linkedin-original.svg" alt='logo linkedin'/>
                             <br /><p>Linkedin</p>
-                            <p>Higor Vital Lopo</p>
+                            <p>Higor V. L.</p>
                         </div>
                     </a>
 

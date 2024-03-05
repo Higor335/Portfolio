@@ -1,5 +1,5 @@
 header {
-    position: fixed;
+    
     background-color: rgb(0, 0, 68);
     width: 100%;
     height: 10vh;
@@ -33,16 +33,16 @@ header {
   @media (max-width: 700px) {
 
     header {
-        height: auto; /* Ajusta a altura automaticamente com base no conteúdo */
-        padding: 10px; /* Adiciona espaço interno para os botões */
-        flex-direction: column; /* Altera a direção da flexão para uma coluna */
-        align-items: center; /* Alinha os itens à esquerda */
+        height: auto;
+        padding: 10px; 
+        flex-direction: column;
+        align-items: center; 
       }
     
       .logo {
         height: 5vh;
         margin-top: 25px;
-        margin-bottom: -29px;
+        margin-bottom: -25px;
         margin-left: 40%;
         transform: translate(-50%,-50%);
         border-radius: 0;
@@ -50,10 +50,8 @@ header {
     
       .botoesCabecalho {
         align-items: center;
-        margin-left: -4px; /* Remove a margem esquerda dos botões */
-        gap: 0.2em; /* Reduza o espaçamento entre os botões */
-        width: 97%; /* Define a largura total para os botões */
-        margin-bottom: 7px;
+        gap: 0.2em; 
+        width: 97%; 
       }
 
       .botoesCabecalho:last-child{
