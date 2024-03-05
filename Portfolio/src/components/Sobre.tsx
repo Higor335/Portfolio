@@ -3,7 +3,7 @@ import "../styles/Sobre.scss"
 export default function Sobre(){
     return (
         <>
-            <div className="sobre">
+            <div id="sobre">
                 <h2>SOBRE MIM</h2>
                 <br /><hr /><br />
 
