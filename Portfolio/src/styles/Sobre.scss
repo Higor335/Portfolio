@@ -24,6 +24,7 @@
             margin-left: 27%;
             margin-right: 5em;
             width: 22em;
+            height: 24em;
             border-radius: 2em;
         }
 
@@ -60,7 +61,6 @@
     .sobre {
       height: 75vh; /* Diminuir a altura */
       margin-top: -26px; /* Ajustar a margem superior */
-      padding-left: 1.22em;
   
       h2 {
         font-size: 1.8em; /* Diminuir o tamanho da fonte do h2 */
@@ -79,6 +79,7 @@
   
         .minhaFoto {
           width: 10em; /* Diminuir o tamanho da imagem */
+          height: 11em;
           margin: 0; /* Remover margens laterais */
           margin-bottom: -2em; /* Adicionar margem inferior */
         }
