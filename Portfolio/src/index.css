@@ -46,3 +46,10 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+img{
+  user-select: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
