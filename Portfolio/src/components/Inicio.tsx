@@ -1,4 +1,4 @@
-import "../styles/Inicio.scss"
+import "../styles/Inicio.scss";
 
 export default function Inicio(){
     return (

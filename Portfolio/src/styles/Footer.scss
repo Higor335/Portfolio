@@ -1,4 +1,4 @@
-#contatos{
+#contatos {
     
     background-color: rgb(0, 0, 68);
     width: 100%;
@@ -6,7 +6,7 @@
     bottom: 0;
     left: 0;
 
-    h2{
+    h2 {
         margin-top: 8px;
     }
 
@@ -32,6 +32,7 @@
             height: 9.7vh;
             transition-duration: 0.8s;
             margin-top: -0.5vw;
+            position: relative;
 
             img {
                 margin-top: 1vh;
@@ -52,8 +53,29 @@
             transition-duration: 0.8s;
             box-shadow: 0 0 2vh rgba(255, 255, 255);
         }
-    }
 
+
+
+            
+        
+        .rocket {
+            
+            display: none;
+            position: fixed;
+            bottom: 0;
+            z-index: 9999;
+            width: 15vh;
+            transform: translateX(-50%);
+            transition: bottom 3s ease-in-out, transform 3s ease-in-out;
+        }
+
+        .rocket.clicked {
+            bottom: 100vh;
+            transform: translate(-50%, -100vh) translateX(40vw) rotate(45deg); /* Movimento para a direita e rotação */
+        }
+
+
+    }
 }
 
 @media (max-width: 700px) {
@@ -62,9 +84,8 @@
 
         .redeSociais {
             gap: 0.8em;
-                
 
-            a{
+            a {
                 width: 20vw;
                 height: 10vh;
             }
