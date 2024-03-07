@@ -1,4 +1,4 @@
-import ".../styles/Jogo.scss"
+import "../../styles/Jogo.scss"
 
 export default function Jogo(){
     return(

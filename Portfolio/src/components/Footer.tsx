@@ -1,34 +1,30 @@
 import '../styles/Footer.scss';
 
-function launchRocket(href) {
+function launchRocket(href:any, indice:any) {
     return function(event) {
-        event.preventDefault(); // Evita que o link seja seguido imediatamente
+        event.preventDefault(); 
 
-        var rocket = document.getElementsByClassName('rocket')[0]; // Obtém o primeiro elemento com a classe 'rocket'
-        var button = document.getElementById('launch-button');
+        var rocket = document.getElementsByClassName('rocket')[indice]; 
+        var button = document.getElementsByClassName('launch-button')[indice];
 
-        // Reinicia a posição do foguete
+        
         rocket.classList.remove('clicked');
         rocket.style.display = 'none';
 
         button.disabled = true;
         setTimeout(function() {
-            rocket.style.display = 'block'; // Exibe a imagem do foguete
+            rocket.style.display = 'block'; 
 
             setTimeout(function() {
                 rocket.classList.add('clicked');
                 setTimeout(function() {
-                    window.open(href, '_blank'); // abrir link em uma nova guia
-                    button.disabled = false; // Reativa o botão
-                }, 2300); // ajuste conforme a velocidade de transição do foguete
-            }, 100); // adicione um pequeno atraso para garantir que a imagem do foguete seja exibida antes de animá-la
-        }, 100); // adicione um pequeno atraso para garantir que a imagem do foguete seja escondida antes de reiniciá-la
+                    window.open(href, '_blank'); 
+                    button.disabled = false; 
+                }, 2300); 
+            }, 100);
+        }, 100);
     };
 }
-
-
-
-
 
 
 export default function Footer(){
@@ -39,10 +35,8 @@ export default function Footer(){
                 <hr />
 
                 <div className="redeSociais">
-                    
                 
-
-                <a onClick={launchRocket("https://www.linkedin.com/in/higorvl/")} id="launch-button" href="https://www.linkedin.com/in/higorvl/">
+                    <a onClick={launchRocket("https://www.linkedin.com/in/higorvl/",0)} className="launch-button" href='https://www.linkedin.com/in/higorvl/'>
                         <div>
                             <img src="src\assets\linkedin-original.svg" alt='logo linkedin'/>
                             <br /><p>Linkedin</p>
@@ -51,7 +45,7 @@ export default function Footer(){
                         </div>
                     </a>
 
-                    <a onClick={launchRocket("https://higor-vl.itch.io")} id="launch-button" href="https://higor-vl.itch.io">
+                    <a onClick={launchRocket("https://higor-vl.itch.io",1)} className="launch-button" href="https://higor-vl.itch.io">
                         <div>
                             <img src="src\assets\itch-io-icon.png" alt="logo itch.io" />
                             <br /><p>Itch.io</p>
@@ -60,7 +54,7 @@ export default function Footer(){
                         </div>
                     </a>
 
-                    <a onClick={launchRocket("https://github.com/Higor335/")} id="launch-button" href="https://github.com/Higor335/">
+                    <a onClick={launchRocket("https://github.com/Higor335/",2)} className="launch-button" href="https://github.com/Higor335/">
                         <div>
                             <img src="src\assets\github-original.svg" alt="logo github" />
                             <br /><p>GitHub</p>

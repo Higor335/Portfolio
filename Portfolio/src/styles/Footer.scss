@@ -59,8 +59,8 @@
             
         
         .rocket {
-            
             display: none;
+            left: 50%;
             position: fixed;
             bottom: 0;
             z-index: 9999;
@@ -71,7 +71,7 @@
 
         .rocket.clicked {
             bottom: 100vh;
-            transform: translate(-50%, -100vh) translateX(40vw) rotate(45deg); /* Movimento para a direita e rotação */
+            transform: translate(-50%, -100vh) translateX(45vw) rotate(40deg); /* Movimento para a direita e rotação */
         }
 
 
