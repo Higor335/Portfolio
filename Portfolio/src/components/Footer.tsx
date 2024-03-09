@@ -1,7 +1,7 @@
 import '../styles/Footer.scss';
 
 function launchRocket(href:any, indice:any) {
-    return function(event) {
+    return function(event:any) {
         event.preventDefault(); 
 
         var rocket = document.getElementsByClassName('rocket')[indice]; 

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import "../styles/Sobre.scss";
 
 export default function Sobre() {
@@ -6,12 +6,12 @@ export default function Sobre() {
     const icons = document.querySelectorAll(".icon");
     const delay = 500; // Delay de 0.5 segundos entre cada imagem
     const duration = 2600; // Duração total do efeito em milissegundos
-    let timeout;
+    let timeout:any;
 
     const startAnimation = () => {
       let delayTime = 0;
 
-      icons.forEach((icon, index) => {
+      icons.forEach((icon) => {
         timeout = setTimeout(() => {
           icon.classList.add("in-viewport");
         }, delayTime);
