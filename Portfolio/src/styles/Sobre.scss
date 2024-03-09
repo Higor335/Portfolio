@@ -25,8 +25,8 @@
         .minhaFoto{
             margin-left: 18%;
             margin-right: 6.5em;
-            width: 20vw;
-            height: 45vh;
+            width: 21vw;
+            height: 46vh;
             border-radius: 10px 40px;
             box-shadow: 4px 4px rgb(255, 255, 255);
         }
@@ -70,21 +70,24 @@
             .linguagens{
               background-color: rgb(255, 255, 255);
               border-radius: 8px;
+              margin-top: -10px;
               padding-top: 20px;
-              margin-left: -11%;
+              margin-left: -5%;
               width: 100%;
               height: 6vh;
               display: flex;
               align-items: center;
               place-content: center;
               gap: 8px;
+              
 
               img{
-                -webkit-text-stroke: 25px rgb(199, 0, 0);
                 margin-top: -10px;
                 width: 3.8vw;
                 height: 8vh;
                 transition: width 0.5s, height 0.5s;
+                box-shadow: 0 0 0 1 white;
+                border-radius: 7px;
               }
 
               img:hover{
@@ -92,6 +95,15 @@
                 width: 5vw;
                 height: 10vh;
               }
+
+              .icon.in-viewport {
+                box-shadow: 0 0 0 1.2px gold;
+                transition: box-shadow 0.5s ease-in-out;
+                animation: shine 3s linear forwards, fade-out 3s 4s forwards;
+              }
+              .icon:not(.in-viewport) {
+                transition: box-shadow 0.5s ease-in-out;
+              }         
             }
         }
     }
@@ -149,33 +161,34 @@
                 background-color: rgb(255, 255, 255);
                 border-radius: 8px;
                 padding-top: 20px;
-                margin-left: -18px;
+                margin-top: 10px;
+                margin-left: -12px;
                 height: 4vh;
-                width: 6vw;
                 display: flex;
                 align-items: center;
                 place-content: center;
-                gap: 4px;
+                gap: 3.5px;
+                
   
                 img {
                   margin-top: -10px;
-                  width: 8vw;
+                  width: 8.8vw;
                   height: 4.8vh;
-                  border: 0.5px solid black;
+                  border: 1px solid white;
                   border-radius: 5px;
-                  transition: width 0.8s ease-out, height 0.8s ease-out;
-                  animation: scaleAnimation 5s infinite;
                 }
                 
                 img:hover {
                   width: 9.5vw;
                   height: 7vh;
-                  transition: width 0.8s ease-out, height 0.8s ease-out;
                 }
-                
-                
-                
-                
+
+                img:nth-child(1){
+                  margin-left: -4px;
+                }
+                img:nth-child(9){
+                  margin-right: -4px;
+                }
               } 
           }
 
