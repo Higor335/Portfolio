@@ -5,7 +5,7 @@ export default function Sobre() {
   useEffect(() => {
     const icons = document.querySelectorAll(".icon");
     const delay = 500; // Delay de 0.5 segundos entre cada imagem
-    const duration = 3000; // Duração total do efeito em milissegundos
+    const duration = 2600; // Duração total do efeito em milissegundos
     let timeout;
 
     const startAnimation = () => {
