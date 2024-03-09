@@ -6,7 +6,7 @@ export default function Sobre() {
     const icons = document.querySelectorAll(".icon");
     const delay = 500; // Delay de 0.5 segundos entre cada imagem
     const duration = 2600; // Duração total do efeito em milissegundos
-    let timeout:any;
+    let timeout: number;
 
     const startAnimation = () => {
       let delayTime = 0;
@@ -58,15 +58,15 @@ export default function Sobre() {
           </p>
           <p className="linguagensTitulo">Linguagens e Tecnologias</p>
           <fieldset className="linguagens">
-            <img src="src\assets\html5.png" className="icon" alt="" />
-            <img src="src\assets\css3.png" className="icon" />
-            <img src="src\assets\sass.png" className="icon" alt="" />
-            <img src="src\assets\js.png" className="icon" alt="" />
-            <img src="src\assets\typescript.png" className="icon" alt="" />
-            <img src="src\assets\react.png" className="icon" alt="" />
-            <img src="src\assets\wordpress.png" className="icon" alt="" />
-            <img src="src\assets\java.png" className="icon" alt="" />
-            <img src="src\assets\mysql.png" className="icon" alt="" />
+            <img src="src\assets\Linguagens\html5.png" className="icon" alt="html5" />
+            <img src="src\assets\Linguagens\css3.png" className="icon" alt="css3"/>
+            <img src="src\assets\Linguagens\sass.png" className="icon" alt="sass" />
+            <img src="src\assets\Linguagens\js.png" className="icon" alt="javascript" />
+            <img src="src\assets\Linguagens\typescript.png" className="icon" alt="typescript" />
+            <img src="src\assets\Linguagens\react.png" className="icon" alt="react" />
+            <img src="src\assets\Linguagens\wordpress.png" className="icon" alt="wordpress" />
+            <img src="src\assets\Linguagens\java.png" className="icon" alt="java" />
+            <img src="src\assets\Linguagens\mysql.png" className="icon" alt="mysql" />
           </fieldset>
         </div>
       </div>
