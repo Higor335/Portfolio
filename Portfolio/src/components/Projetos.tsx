@@ -7,7 +7,10 @@ export default function Projetos(){
             <br /><hr /><br />
 
             <div className="conteudo">
+                <div className="blocos">
+                    
 
+                </div>
             </div>
         </div>
     )

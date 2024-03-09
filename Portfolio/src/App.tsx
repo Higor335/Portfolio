@@ -5,6 +5,7 @@ import Inicio from './components/Inicio'
 import Sobre from './components/Sobre'
 import Projetos from './components/Projetos'
 
+
 function App() {
 
   return (

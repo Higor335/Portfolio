@@ -1,7 +1,7 @@
 #projetos{
     background-color: #006494;
     width: 100%;
-    height: 90vh;
+    height: 95vh;
     bottom: 0;
     left: 0;
     display: block;
@@ -20,12 +20,17 @@
     }
 
     .conteudo{
-
+      margin-top: -1%;
+      width: 100%;
+      height: 80vh;
+      margin: flex;
+      flex: wrap;
+      flex-direction: row;
     }
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
 
     #projetos{
       height: 88vh; 
