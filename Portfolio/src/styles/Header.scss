@@ -1,35 +1,35 @@
 header {
   position: sticky;
-    background-color: rgb(0, 0, 68);
+    background-color: rgba(0, 0, 68,0.92);
+    background: transparent blue;
     height: 10vh;
     top: 0;
     left: 0;
     display: flex;
     align-items: center;
     z-index: 1000;
-  }
-  
-  .logo {
+
+    .logo {
       margin-left: 3rem;
       max-width: 7vh; /* Ajuste o tamanho máximo da imagem conforme necessário */
       color: blue;
       border-radius: 2rem;
-  }
-  
-  .botoesCabecalho {
+    }
+
+    .botoesCabecalho {
       margin-left: auto;
       margin-right: 2rem;
       display: flex;
       flex-direction: row;
       gap: 5vw;
       height: 7vh;
-  }
 
-  button{
-    width: 150px;
+      button{
+        width: 150px;
+      }
+    }
   }
   
-
   @media (max-width: 767px) {
 
     header {
