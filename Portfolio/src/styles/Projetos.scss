@@ -47,7 +47,7 @@
   }
 
   @media (max-width: 767px) {
-      height: 280vh; 
+      height: auto; 
       margin-top: -26px; 
 
       h2 {
@@ -70,9 +70,10 @@
 
           .blocos {
               background-color: rgb(255, 255, 255);
-              width: 80%; /* Defina a largura dos blocos para 48% para caberem dois por linha */
-              height: 50vh; /* Defina a altura para 'auto' para ajustar conforme o conteúdo */
+              width: 80%;
               
+              margin-bottom: 10px;
+
               img {
                   width: 100%;
                   height: auto;
