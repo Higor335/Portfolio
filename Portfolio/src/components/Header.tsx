@@ -16,7 +16,7 @@ export default function Header(){
 
     return(
         <header>
-            <a href=""><img src="src\assets\icone.png" alt="logo" className="logo"/></a>
+            <a href={"#inicio"}><img src="src\assets\icone.png" alt="logo" className="logo"/></a>
             <div className="botoesCabecalho">
                 <button onClick={() => scroLento('#inicio')}>Inicio</button>
                 <button onClick={() => scroLento('#sobre')}>Sobre</button>
