@@ -1,13 +1,14 @@
 #projetos {
   background-color: #006494;
   width: 100%;
-  height: 130vh;
+  height: auto;
   bottom: 0;
   left: 0;
   display: block;
   align-items: center;
   justify-content: center;
   margin-top: -26px;
+  padding-bottom: 30px;
 
   h2 {
       padding-top: 3vh;
@@ -20,10 +21,10 @@
   }
 
   .conteudo {
-      margin-top: -1%;
+      margin-top: -1%;      
       width: 95%;
       margin-left: 35px;
-      height: 80vh;
+      height: auto;
       display: flex;
       flex-wrap: wrap;
       gap: 30px;
@@ -31,17 +32,25 @@
       justify-content: center;
 
       .blocos {
-          background-color: rgb(255, 255, 255);
+          background-color: #000044;
           flex-direction: column; 
           border-radius: 28px;
-          width: 25vw;
-          height: 50vh;
-          color: black;
+          width: 35vw;
+          height: auto;
+          color: rgb(255, 255, 255);
+          font-weight: bold;
+          border: 1px solid rgb(0, 0, 68);
+          box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5); /* sombra azul escuro com desfoque */
+
 
           img {
               width: 100%;
-              height: 30vh;
+              height: 35vh;
               border-radius: 10px 10px 0px 0px;
+          }
+
+          button{
+            margin-bottom: 15px;
           }
       }
   }
@@ -68,10 +77,8 @@
           display: flex;
           flex-wrap: wrap;
 
-          .blocos {
-              background-color: rgb(255, 255, 255);
-              width: 80%;
-              
+          .blocos {              
+              width: 80%;              
               margin-bottom: 10px;
 
               img {

@@ -1,4 +1,5 @@
 import "../styles/Projetos.scss"
+import ProjetoBloco from "./project objects/ProjetoBloco"
 
 export default function Projetos(){
     return (
@@ -7,38 +8,48 @@ export default function Projetos(){
             <br /><hr /><br />
 
             <div className="conteudo">
-                <div className="blocos">
-                    <img src="src\assets\Projetos\BooksCorumba.png" alt="BooksCorumba" />
-                    <h3>BOOKS CORUMBÁ</h3><hr />
-                    <p>Site Completo simulando uma loja de livros!</p>
-                </div>
 
-                <div className="blocos">
-                    <img src="src\assets\Projetos\Receitas.png" alt="Receitas" />
-                    <h3>REPOSITÓRIO DE RECEITAS</h3><hr />
-                    <p>Repositório web com mais de 235 receitas!</p>
-                </div>
+                <ProjetoBloco 
+                    imagem={"src/assets/Projetos/BooksCorumba.png"}
+                    titulo={"BOOKS CORUMBÁ"}
+                    descricao={"Site Completo simulando uma loja de livros!"} 
+                    link={"https://higor335.github.io/BooksCorumba/"}
+                />
+               
+                <ProjetoBloco 
+                    imagem={"src/assets/Projetos/Receitas.png"}
+                    titulo={"REPOSITÓRIO DE RECEITAS"}
+                    descricao={"Repositório web com mais de 235 receitas!"} 
+                    link={"https://higor335.github.io/REpoCIPES/"}
+                />
 
-                <div className="blocos">
-                    <img src="src\assets\Projetos\Sputfy.png" alt="Sputfy" />
-                    <h3>SPUTFY</h3><hr />
-                    <p>Projeto de player de músicas</p>
-                </div>
+                <ProjetoBloco 
+                    imagem={"src/assets/Projetos/Sputfy.png"}
+                    titulo={"SPUTFY"}
+                    descricao={"Projeto de player de músicas!"} 
+                    link={"https://higor335.github.io/Site-Teste_SPUTFY/"}
+                />
 
-                <div className="blocos">
-                    <img src="src\assets\Projetos\SpaceKiller2D.png" alt="spacekiller" />
-                    <h3>SPACE KILLER 2D</h3><hr />
-                    <p>Jogo 2D feito em unity!</p>
-                </div>
+                <ProjetoBloco 
+                    imagem={"src/assets/Projetos/SpaceKiller2D.png"}
+                    titulo={"SPACE KILLER 2D"}
+                    descricao={"Jogo 2D feito em unity para desktop!"} 
+                    link={"https://itch.io/embed-upload/9315862?color=000044"}
+                />
 
-                <div className="blocos">
-                    <img src="src\assets\Projetos\SpaceKiller2D.png" alt="spacekiller" />
-                    <h3>Space Killer 2D</h3><hr />
-                    <p>Jogo 2D feito em unity</p>
-                </div>
+                <ProjetoBloco 
+                    imagem={"src/assets/Projetos/jogoDaForca1.png"}
+                    titulo={"JOGO DA FORCA"}
+                    descricao={"Jogo para celular feito no Android Studio!"} 
+                    link={""}
+                />
 
-                
-
+                <ProjetoBloco 
+                    imagem={"src/assets/Projetos/EnigmaDungeon.png"}
+                    titulo={"ENIGMA DUNGEON"}
+                    descricao={"Jogo 3D feito em unity para desktop!"} 
+                    link={""}
+                />
             </div>
         </div>
     )
