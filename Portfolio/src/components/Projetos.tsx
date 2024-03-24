@@ -13,7 +13,7 @@ export default function Projetos(){
                     imagem={"src/assets/Projetos/BooksCorumba.png"}
                     titulo={"BOOKS CORUMBÁ"}
                     descricao={"Loja digital de livros, com tecnologias de front e back-end!"} 
-                    detalhes={'Site feito mesclando conhecimentos em FRONT-END e BACK-END, sendo o Front feito em React+Vite, Typescript, HTML, SASS. Enquanto o Back-end foi feito utilizando Node-JS e Javascript, junto ao mongoDB. Site sem fins lucrativos.<br> Todos os direitos autorais dos livros utilizados pertencem aos seus respectivos proprietários.'}
+                    detalhes={'Site feito mesclando conhecimentos em FRONT-END e BACK-END, sendo o Front feito em React+Vite, Typescript, HTML, SASS. Enquanto o Back-end foi feito utilizando Node-JS e Javascript, junto ao mongoDB. Site sem fins lucrativos. Todos os direitos autorais dos livros utilizados pertencem aos seus respectivos proprietários.'}
                     link={"https://higor335.github.io/BooksCorumba/"}
                 />
                
