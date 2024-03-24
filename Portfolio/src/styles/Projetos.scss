@@ -32,30 +32,75 @@
       justify-content: center;
 
       .blocos {
-          background-color: #000044;
-          flex-direction: column; 
-          border-radius: 28px;
-          width: 35vw;
-          height: auto;
-          color: rgb(255, 255, 255);
-          font-weight: bold;
-          border: 1px solid rgb(0, 0, 68);
-          box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5); /* sombra azul escuro com desfoque */
-
-          img {
-              width: 100%;
-              height: 35vh;
-              border-radius: 10px 10px 0px 0px;
-          }
-
-          button{
+        background-color: #000044;
+        flex-direction: column; 
+        border-radius: 28px;
+        width: 35vw;
+        height: auto;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        border: 1px solid rgb(0, 0, 68);
+        box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5); /* sombra azul escuro com desfoque */
+        transition: transform 0.6s ease; /* Adicionando uma transição para suavizar a animação */
+    
+        .botao, h3, p, a {
+            transition: opacity 0.6s ease; /* Adicionando transição para a opacidade */
+        }
+    
+        img {
+            width: 100%;
+            height: 35vh;
+            border-radius: 10px 10px 0px 0px;
+        }
+    
+        button {
             margin-bottom: 15px;
-          }
-      }
+        }
+    
+        .conteudoOculto {
+            display: none;
+        }
+    
+        &:hover {
+            transform: scale(1.03);
+        }
+    
+        &.flipped {
+            height: 50vh;
+            transform: rotateY(180deg);
 
-      .blocos:hover{
-        scale: 1.03;
-      }
+            .capa, h3, .desc, .botao, hr {
+                display: none;
+                opacity: 0; 
+            }
+
+            .conteudoOculto {
+                display: block; 
+                img, p, button {
+                    transform: rotateY(180deg);
+                }
+
+                img{
+                    width: 100%;
+                    height: 50vh;
+                    opacity: 0.15;
+                    border-radius: 25px;
+                }
+
+                p{
+                    margin-top: -40%;
+                    margin-left: 15%;
+                    font-size: 23px;
+                    width: 70%;
+                    text-align: justify;
+                    hyphens: auto;
+                }
+            }
+           
+            
+        }
+    }
+    
   }
 
   @media (max-width: 767px) {
@@ -79,6 +124,7 @@
           height: 95%;
           display: flex;
           flex-wrap: wrap;
+          
 
           .blocos {              
               width: 80%;              
@@ -87,7 +133,19 @@
               img {
                   width: 100%;
               }
+
+              &.flipped .conteudoOculto {
+                p{
+                    margin-left: 5%;
+                    margin-top: -100%;
+                    width: 90%;
+                    font-weight: bolder;
+                    font-size: 18px;
+                }
+              }
           }
       }
+
+      
   }
 }
