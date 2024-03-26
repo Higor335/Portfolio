@@ -4,8 +4,8 @@ import "../styles/Sobre.scss";
 export default function Sobre() {
   useEffect(() => {
     const icons = document.querySelectorAll(".icon");
-    const delay = 500; // Delay de 0.5 segundos entre cada imagem
-    const duration = 2600; // Duração total do efeito em milissegundos
+    const delay = 500; 
+    const duration = 2600; 
     let timeout: number;
 
     const startAnimation = () => {

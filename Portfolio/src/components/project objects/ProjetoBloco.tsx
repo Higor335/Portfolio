@@ -5,7 +5,8 @@ interface Bloco{
     titulo:string,
     descricao:string,
     detalhes:string,
-    link:string
+    link:string,
+    item:string
 }
 
 
@@ -18,20 +19,43 @@ function toggleContent(event: React.MouseEvent<HTMLDivElement, MouseEvent>) {
 
 
 
-function ProjetoBloco({imagem, titulo, descricao, detalhes, link}:Bloco){
+function ProjetoBloco({imagem, titulo, descricao, detalhes, link, item}:Bloco){
     
+    let botaodesc="";
+
+    switch (item){
+        case "projeto":
+            botaodesc="Ver Projeto";
+            break;
+        case "jogo2D":
+            botaodesc="Jogar"
+            break;
+        case "jogo3D":
+        case "android":
+            botaodesc="Baixar"
+            break;
+        case "github":
+            botaodesc="Ver Projetos"
+            break;        
+        default:
+            botaodesc="Ver Projeto"
+            break;
+    }
+
     return(        
         <div className="blocos" onClick={toggleContent}>
-
             <img className="capa" src={imagem} alt={titulo} />
             <h3>{titulo}</h3><hr />
             <p className="desc">{descricao}</p>
-            <a className="botao" href={link} target="_blank"><button>Ver Projeto</button></a>
-            
-            <div className="conteudoOculto">
-                <img src={imagem} alt={titulo} />
-                <p>{detalhes}</p>
-                <a href={link} target="_blank"><button>Ver Projeto</button></a>
+            <div className="botoesFrente">
+                <a className="botao" href={link} target="_blank" download={item === "android" ? true : undefined}><button>{botaodesc}</button></a>
+                <img className="seta" src="src/assets/seta.png" alt="seta" />
+            </div>
+
+            <div className="conteudoOculto">                
+                <img src={imagem} alt={titulo} className="imgCapa"/>                                
+                <p>SOBRE O PROJETO: <br /><br />{detalhes}</p>
+                <a href={link} target="_blank"><button>{botaodesc}</button></a>
             </div>
         </div>
 

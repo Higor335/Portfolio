@@ -16,7 +16,7 @@ export default function Header(){
 
     return(
         <header>
-            <a href={"#inicio"}><img src="src\assets\icone.png" alt="logo" className="logo"/></a>
+            <a target="_blank" href="https://github.com/Higor335/"><img src="src\assets\github-icon.png" alt="logo" className="logo"/><p>Higor Vital Lopo</p></a>
             <div className="botoesCabecalho">
                 <button onClick={() => scroLento('#inicio')}>Inicio</button>
                 <button onClick={() => scroLento('#sobre')}>Sobre</button>
