@@ -30,6 +30,10 @@ header {
     }
   }
 
+  .hrHeader{
+    display: none;
+  }
+
 
   .botoesCabecalho {
     margin-left: auto;
@@ -41,6 +45,7 @@ header {
 
     button{
       width: 150px;
+      background-color: transparent;
     }
   }
   }
@@ -48,20 +53,33 @@ header {
   @media (max-width: 767px) {
 
     header {
-        height: auto;
-        padding: 10px; 
+        height: auto;      
         display: flex;        
         flex-direction: column;
         align-items: center; 
+
+        .hrHeader{
+          display: inline;
+          width: 85%;
+        }
         
     }
     
+    .botaoGHUB{
+      margin-left: -33px;
+    }
+
     .logo {
       height: 5vh;
-      margin-top: 25px;
+      margin-top: 15px;
+      
       margin-bottom: -25px;
       transform: translate(-50%,-50%);
       border-radius: 0;
+    }
+
+    .nomeHeader{
+      margin-left: -15px;
     }
     
     .botoesCabecalho {
@@ -71,7 +89,7 @@ header {
       button{
         flex-grow: 1;
         flex-basis: 0;
-        max-width: 25%; 
+        max-width: 28%; 
         text-align: center;
         padding: 10px;
       }

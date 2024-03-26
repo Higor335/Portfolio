@@ -3,7 +3,7 @@ import "../styles/Header.scss"
 export default function Header(){
 
     function scroLento(target: string){
-        const headerHeight = 95;
+        const headerHeight = 125;
         const element = document.querySelector(target);
         if (element) {
             const topOffset = (element as HTMLElement).offsetTop - headerHeight;
@@ -16,12 +16,13 @@ export default function Header(){
 
     return(
         <header>
-            <a target="_blank" href="https://github.com/Higor335/"><img src="src\assets\github-icon.png" alt="logo" className="logo"/><p>Higor Vital Lopo</p></a>
+            <a className="botaoGHUB" target="_blank" href="https://github.com/Higor335/"><img src="src\assets\github-icon1.png" alt="logo" className="logo"/><p className="nomeHeader">Higor Vital Lopo</p></a>
+            <hr className="hrHeader"/>
             <div className="botoesCabecalho">
-                <button onClick={() => scroLento('#inicio')}>Inicio</button>
-                <button onClick={() => scroLento('#sobre')}>Sobre</button>
-                <button onClick={() => scroLento('#projetos')}>Projetos</button>
-                <button onClick={() => scroLento('#contatos')}>Contatos</button>
+                <button onClick={() => scroLento('#inicio')}>INICIO</button>
+                <button onClick={() => scroLento('#sobre')}>SOBRE</button>
+                <button onClick={() => scroLento('#projetos')}>PROJETOS</button>
+                <button onClick={() => scroLento('#contatos')}>CONTATOS</button>
             </div>
         </header>
     )
