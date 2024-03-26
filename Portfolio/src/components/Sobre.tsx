@@ -1,5 +1,15 @@
 import { useEffect } from "react";
 import "../styles/Sobre.scss";
+import MinhaFoto from "../assets/eu.jpeg"
+import HTML5 from "../assets/Linguagens/html5.png"
+import CSS3 from "../assets/Linguagens/css3.png"
+import SASS from "../assets/Linguagens/sass.png"
+import JS from "../assets/Linguagens/js.png"
+import TS from "../assets/Linguagens/typescript.png"
+import REACT from "../assets/Linguagens/react.png"
+import WORDPRESS from "../assets/Linguagens/wordpress.png"
+import JAVA from "../assets/Linguagens/java.png"
+import MYSQL from "../assets/Linguagens/mysql.png"
 
 export default function Sobre() {
   useEffect(() => {
@@ -40,7 +50,7 @@ export default function Sobre() {
       <br />
 
       <div className="bloco">
-        <img src="src\assets\eu.jpeg" alt="minha foto" className="minhaFoto" />
+        <img src={MinhaFoto} alt="minha foto" className="minhaFoto" />
 
         <div className="info">
           <h3>
@@ -58,15 +68,15 @@ export default function Sobre() {
           </p>
           <p className="linguagensTitulo">Linguagens e Tecnologias</p>
           <fieldset className="linguagens">
-            <img src="src\assets\Linguagens\html5.png" className="icon" alt="html5" />
-            <img src="src\assets\Linguagens\css3.png" className="icon" alt="css3"/>
-            <img src="src\assets\Linguagens\sass.png" className="icon" alt="sass" />
-            <img src="src\assets\Linguagens\js.png" className="icon" alt="javascript" />
-            <img src="src\assets\Linguagens\typescript.png" className="icon" alt="typescript" />
-            <img src="src\assets\Linguagens\react.png" className="icon" alt="react" />
-            <img src="src\assets\Linguagens\wordpress.png" className="icon" alt="wordpress" />
-            <img src="src\assets\Linguagens\java.png" className="icon" alt="java" />
-            <img src="src\assets\Linguagens\mysql.png" className="icon" alt="mysql" />
+            <img src={HTML5} className="icon" alt="html5" />
+            <img src={CSS3} className="icon" alt="css3"/>
+            <img src={SASS} className="icon" alt="sass" />
+            <img src={JS} className="icon" alt="javascript" />
+            <img src={TS} className="icon" alt="typescript" />
+            <img src={REACT} className="icon" alt="react" />
+            <img src={WORDPRESS} className="icon" alt="wordpress" />
+            <img src={JAVA} className="icon" alt="java" />
+            <img src={MYSQL} className="icon" alt="mysql" />
           </fieldset>
         </div>
       </div>

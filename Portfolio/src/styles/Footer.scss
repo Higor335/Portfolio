@@ -32,11 +32,12 @@
             height: 9.7vh;
             transition-duration: 0.8s;
             margin-top: -0.5vw;
+            margin-bottom: 10px;
             position: relative;
 
             img {
                 margin-top: 1vh;
-                width: 2.5vw; /* Tamanho da imagem para computadores */
+                width: 2.5vw; 
                 max-width: 100%;
                 height: auto;
                 margin-bottom: -2vh;
@@ -71,7 +72,7 @@
 
         .rocket.clicked {
             bottom: 100vh;
-            transform: translate(-50%, -100vh) translateX(45vw) rotate(40deg); /* Movimento para a direita e rotação */
+            transform: translate(-50%, -100vh) translateX(45vw) rotate(40deg);
         }
 
 

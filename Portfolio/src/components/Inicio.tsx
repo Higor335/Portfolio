@@ -1,4 +1,5 @@
 import "../styles/Inicio.scss";
+import INICIO from "../assets/inicio1.png"
 
 export default function Inicio(){
     return (
@@ -7,7 +8,7 @@ export default function Inicio(){
                 <h1 className="nome"><strong>Higor Vital Lopo</strong></h1>
                 <h2 className="cargo">Desenvolvedor de Websites e Sistemas</h2>
             </div>
-            <img className="imagem" src="src\assets\inicio1.png" alt="logo" />
+            <img className="imagem" src={INICIO} alt="logo" />
         </div>
     )
 }

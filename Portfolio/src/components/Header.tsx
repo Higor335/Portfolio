@@ -1,4 +1,5 @@
 import "../styles/Header.scss"
+import GITHUB from "../assets/github-icon.png"
 
 export default function Header(){
 
@@ -16,7 +17,7 @@ export default function Header(){
 
     return(
         <header>
-            <a className="botaoGHUB" target="_blank" href="https://github.com/Higor335/"><img src="src\assets\github-icon1.png" alt="logo" className="logo"/><p className="nomeHeader">Higor Vital Lopo</p></a>
+            <a className="botaoGHUB" target="_blank" href="https://github.com/Higor335/"><img src={GITHUB} alt="logo" className="logo"/><p className="nomeHeader">Higor Vital Lopo</p></a>
             <hr className="hrHeader"/>
             <div className="botoesCabecalho">
                 <button onClick={() => scroLento('#inicio')}>INICIO</button>
