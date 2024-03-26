@@ -69,7 +69,7 @@ export default function Projetos(){
                     titulo={"JOGO DA FORCA"}
                     descricao={"Jogo para celular feito no Android Studio!"} 
                     detalhes="Jogo da forca com mecânicas de SALVAMENTO LOCAL, PLACAR, uso de SENSORES de luz (para regular modo claro ou noturno do jogo) para celulares android, feito utilizando Java com AndroidStudio"
-                    link={"src/assets/JogoDaForca.apk"}
+                    link={"../assets/JogoDaForca.apk"}
                     item={"android"}
                 />
 
