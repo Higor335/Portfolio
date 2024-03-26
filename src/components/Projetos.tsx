@@ -9,6 +9,7 @@ import FORCA from "../assets/Projetos/jogoDaForca.png"
 import ENIGMA from "../assets/Projetos/EnigmaDungeon.png"
 import GITHUB from "../assets/Projetos/github.png"
 
+
 export default function Projetos(){
     return (
         <div id="projetos">
@@ -68,7 +69,7 @@ export default function Projetos(){
                     titulo={"JOGO DA FORCA"}
                     descricao={"Jogo para celular feito no Android Studio!"} 
                     detalhes="Jogo da forca com mecânicas de SALVAMENTO LOCAL, PLACAR, uso de SENSORES de luz (para regular modo claro ou noturno do jogo) para celulares android, feito utilizando Java com AndroidStudio"
-                    link={"Portfolio/src/assets/JogoDaForca.apk"}
+                    link={"src/assets/JogoDaForca.apk"}
                     item={"android"}
                 />
 
