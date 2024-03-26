@@ -1,4 +1,5 @@
 import "../../styles/Projetos.scss"
+import SETA from "../../assets/seta.png"
 
 interface Bloco{
     imagem:string, 
@@ -49,7 +50,7 @@ function ProjetoBloco({imagem, titulo, descricao, detalhes, link, item}:Bloco){
             <p className="desc">{descricao}</p>
             <div className="botoesFrente">
                 <a className="botao" href={link} target="_blank" download={item === "android" ? true : undefined}><button>{botaodesc}</button></a>
-                <img className="seta" src="src/assets/seta.png" alt="seta" />
+                <img className="seta" src={SETA} alt="seta" />
             </div>
 
             <div className="conteudoOculto">                
