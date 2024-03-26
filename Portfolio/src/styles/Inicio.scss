@@ -1,5 +1,4 @@
 #inicio{
-    
     width: 100%;
     height: 79vh;
     top: 10vh;
@@ -31,24 +30,24 @@
 
 @media (max-width: 767px) {
 
-    #inicio {
+    #inicio{
         top: 14vh;
         display: block;
         align-items: center;
         justify-content: center;
         margin-top: -21.5px;
 
-        .perfil {
+        .perfil{
             width: 100%;
 
-            .nome {
+            .nome{
                 font-size: 2em; 
                 text-align: center; 
                 margin-bottom: 0; 
                 padding-top: 2em;
             }
 
-            .cargo {
+            .cargo{
                 font-size: 1.5em; 
                 text-align: center;
             }
@@ -58,5 +57,4 @@
             width: 66.27vw;
         }
     }
-
 }
