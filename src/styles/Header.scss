@@ -1,0 +1,99 @@
+header {
+  position: sticky;
+  background-color: rgba(0, 0, 68,0.92);
+  background: transparent blue;
+  height: 10vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+
+  a{
+    display: flex;
+    align-items: center;
+    justify-content: center;        
+    height: 80%;
+
+    .logo {
+      margin-left: 3rem;
+      margin-right: 10px;
+      max-width: 7vh;           
+      border-radius: 0.5rem;
+    }
+
+    p{
+      color: rgb(255, 255, 255);
+      font-weight: bolder;
+      font-size: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  }
+
+  .hrHeader{
+    display: none;
+  }
+
+
+  .botoesCabecalho {
+    margin-left: auto;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    height: 7vh;
+
+    button{
+      width: 150px;
+      background-color: transparent;
+      color: rgb(255, 255, 255);
+    }
+  }
+  }
+  
+  @media (max-width: 767px) {
+
+    header {
+        height: auto;      
+        display: flex;        
+        flex-direction: column;
+        align-items: center; 
+
+        .hrHeader{
+          display: inline;
+          width: 85%;
+        }
+        
+    }
+    
+    .botaoGHUB{
+      margin-left: -33px;
+    }
+
+    .logo {
+      height: 5vh;
+      margin-top: 15px;
+      
+      margin-bottom: -25px;
+      transform: translate(-50%,-50%);
+      border-radius: 0;
+    }
+
+    .nomeHeader{
+      margin-left: -15px;
+    }
+    
+    .botoesCabecalho {
+      align-items: center;         
+      width: 100%; 
+
+      button{
+        flex-grow: 1;
+        flex-basis: 0;
+        max-width: 28%; 
+        text-align: center;
+        padding: 10px;
+        color: rgb(255, 255, 255);
+      }
+    }
+  }
