@@ -5,7 +5,9 @@ iframe{
 @media (max-width: 767px) {
     iframe{
         left: 0;
-        width: 100vw;
+        /* avoid using viewport units; 100% respects any container padding/scrollbar */
+        width: 100%;
         height: 60vh;
+        max-width: 100%;
     }
 }

@@ -42,6 +42,25 @@ export default function Sobre() {
     };
   }, []);
 
+  const minhaIdade = calcularIdade(new Date(2002, 0, 20)); 
+
+  function calcularIdade(dataNascimento: Date): number {
+    const hoje = new Date();
+    let idade = hoje.getFullYear() - dataNascimento.getFullYear();
+
+    const mesAtual = hoje.getMonth();
+    const mesNascimento = dataNascimento.getMonth();
+
+    if (
+      mesAtual < mesNascimento ||
+      (mesAtual === mesNascimento && hoje.getDate() < dataNascimento.getDate())
+    ) {
+      idade--;
+    }
+
+    return idade;
+  }
+
   return (
     <div id="sobre">
       <h2>SOBRE MIM</h2>
@@ -57,7 +76,7 @@ export default function Sobre() {
             Olá, Tudo Bem?<br /> Eu sou o Higor Vital Lopo 👋
           </h3>
           <p>
-            Olá, meu nome é Higor e tenho 22 anos. Sou formado em{" "}
+            Olá, meu nome é Higor e tenho {minhaIdade} anos. Sou formado em{" "}
             <strong>Sistemas de Informação</strong> aficionado por{" "}
             <strong className="strong-light-blue">Desenvolvimento Web</strong>,{" "}
             <strong className="strong-green">Sistemas</strong> e aspirante a{" "}

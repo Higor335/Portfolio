@@ -1,6 +1,5 @@
 #sobre{
     background-color: rgb(0, 0, 68);
-    width: 100%;    
     height: 78vh;
     left: 0;
     display: block;
@@ -24,8 +23,8 @@
         .minhaFoto{
             margin-left: 18%;
             margin-right: 6.5em;
-            width: 21vw;
-            height: 46vh;
+            width: 18vw;
+            height: 50vh;
             border-radius: 10px 40px;
             box-shadow: 4px 4px rgb(255, 255, 255);
         }
@@ -72,8 +71,7 @@
               margin-top: -10px;
               padding-top: 20px;
               margin-left: -5%;
-              width: 100%;
-              height: 6vh;
+              height: auto;
               display: flex;
               align-items: center;
               place-content: center;
@@ -108,6 +106,7 @@
     #sobre {
       height: auto; 
       margin-top: -26px; 
+      width: 100%;
   
         h2 {
           font-size: 1.8rem; 
@@ -144,8 +143,8 @@
 
 
               .linguagensTitulo{
-                font-size: 1.5em;
-                margin-left: 20px;
+                font-size: 20px;
+                margin-left: 10%;
                 margin-bottom: -2px;
                 font-weight: bolder;
                 color: green;              
@@ -154,10 +153,10 @@
               .linguagens{
                 background-color: rgb(255, 255, 255);
                 border-radius: 8px;
-                padding-top: 20px;
                 margin-top: 10px;
-                margin-left: -12px;
-                height: 4vh;
+                margin-left: 5%;
+                width: 100%;
+                height: auto;
                 display: flex;
                 align-items: center;
                 place-content: center;
@@ -166,18 +165,13 @@
   
                 img {
                   margin-top: -10px;
-                  width: 8.8vw;
-                  height: 4.8vh;
+                  width: 8vw;
+                  height: 4vh;
                   border: 1px solid white;
                   border-radius: 5px;
                 }
                 
-                img:nth-child(1){
-                  margin-left: -4px;
-                }
-                img:nth-child(9){
-                  margin-right: -4px;
-                }
+                
               } 
           }
 

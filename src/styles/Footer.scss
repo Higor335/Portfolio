@@ -28,8 +28,8 @@
             border-radius: 20px;
             background-color: white;
             padding: 0 5vw 5vh 5vw;
-            width: 15vw;
-            height: 9.7vh;
+            width: 20%;
+            height: auto;
             transition-duration: 0.8s;
             margin-top: -0.5vw;
             margin-bottom: 10px;
@@ -87,12 +87,12 @@
             gap: 0.8em;
 
             a {
-                width: 20vw;
-                height: 10vh;
+                width: 25%;
+                height: auto;
             }
 
             a p {
-                font-size: 1.8vh;
+                font-size: 1.5vh;
                 margin-top: 24px;
                 margin-bottom: -2vh;
             }
