@@ -13,17 +13,21 @@
   h2 {
       padding-top: 3vh;
       font-size: 4vh;
+      text-align: center;
   }
 
   hr {
       margin-top: -2vh;
       width: 45%;
+      margin-left: auto;
+      margin-right: auto;
   }
 
   .conteudo {
       margin-top: -1%;      
       width: 95%;
-      margin-left: 35px;
+      margin-left: auto;
+      margin-right: auto;
       height: auto;
       display: flex;
       flex-wrap: wrap;
@@ -59,9 +63,7 @@
             border-radius: 10px 10px 0px 0px;
         }
 
-        .desc{
-            width: 90%;
-        }
+        
     
         button {
             margin-bottom: 15px;
@@ -94,10 +96,17 @@
             }
 
             .conteudoOculto {
-                display: block; 
+                display: flex; 
+                flex-direction: column;
+                align-items: center;
 
                 .imgCapa, p, button {
                     transform: rotateY(180deg);
+                }
+
+                button{
+                    margin-top: 20px;
+                    color: white;
                 }
 
                 .imgCapa{                    
@@ -172,6 +181,11 @@
                     right: 5px;
                     width: 2.5rem;
                 }
+              }
+
+              .desc{
+                width: 85%;
+                text-align: center;
               }
           }
       }

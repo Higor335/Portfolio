@@ -36,10 +36,10 @@
         align-items: center;
         justify-content: center;
         margin-top: -21.5px;
+        
 
         .perfil{
             width: 100%;
-
             .nome{
                 font-size: 2em; 
                 text-align: center; 
@@ -53,6 +53,12 @@
             }
         }
 
-        
+        .imagem{
+            width: 19em;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 2em;
+        }
     }
 }

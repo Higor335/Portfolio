@@ -10,7 +10,6 @@ export default function Admin() {
     descricao: "",
     detalhes: "",
     link: "",
-    imagem: "",
     item: ""
   });
 
@@ -58,35 +57,48 @@ export default function Admin() {
     const fileName = `${Date.now()}-${file.name}`;
 
     const { error: uploadError } = await supabase.storage
-      .from("projetos") // nome do bucket
+      .from("imagens de projetos")
       .upload(fileName, file);
 
     if (uploadError) {
-      alert("Erro ao enviar imagem");
+      console.error("Erro ao enviar imagem:", uploadError);
+      alert(`Erro ao enviar imagem: ${uploadError.message}`);
       return;
     }
 
-    // 🔗 Pegar URL pública
+    // 🔗 URL pública da imagem
     const { data: publicUrlData } = supabase.storage
-      .from("projetos")
+      .from("imagens de projetos")
       .getPublicUrl(fileName);
 
     const imageUrl = publicUrlData.publicUrl;
 
-    // 💾 Inserir no banco
+    // 📌 Insert no banco com created_at automático
     const { error } = await supabase
       .from("projetos")
       .insert([
         {
           ...form,
-          imagem: imageUrl
+          imagem: imageUrl,
+          created_at: new Date().toISOString()
         }
       ]);
 
     if (!error) {
       alert("Projeto cadastrado!");
+
+      setForm({
+        titulo: "",
+        descricao: "",
+        detalhes: "",
+        link: "",
+        item: ""
+      });
+
+      setFile(null);
     } else {
-      alert("Erro ao salvar projeto");
+      console.error("Erro ao salvar projeto:", error);
+      alert(`Erro ao salvar projeto: ${error.message}`);
     }
   }
 
@@ -104,21 +116,25 @@ export default function Admin() {
     <form onSubmit={handleSubmit}>
       <input
         placeholder="Título"
+        value={form.titulo}
         onChange={e => setForm({ ...form, titulo: e.target.value })}
       />
 
       <input
         placeholder="Descrição"
+        value={form.descricao}
         onChange={e => setForm({ ...form, descricao: e.target.value })}
       />
 
       <textarea
         placeholder="Detalhes"
+        value={form.detalhes}
         onChange={e => setForm({ ...form, detalhes: e.target.value })}
       />
 
       <input
         placeholder="Link"
+        value={form.link}
         onChange={e => setForm({ ...form, link: e.target.value })}
       />
 
@@ -130,6 +146,7 @@ export default function Admin() {
 
       <input
         placeholder="Tipo"
+        value={form.item}
         onChange={e => setForm({ ...form, item: e.target.value })}
       />
 
