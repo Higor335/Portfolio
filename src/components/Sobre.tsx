@@ -16,7 +16,7 @@ export default function Sobre() {
     const icons = document.querySelectorAll(".icon");
     const delay = 500; 
     const duration = 2600; 
-    let timeout: number;
+    let timeout: ReturnType<typeof setTimeout>
 
     const startAnimation = () => {
       let delayTime = 0;

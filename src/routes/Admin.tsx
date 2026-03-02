@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { supabase } from "../lib/supabase";
+import { Session } from "@supabase/supabase-js"
+import { useNavigate } from "react-router-dom";
 
 export default function Admin() {
-  const [user, setUser] = useState<any>(null);
+  const [user, setUser] = useState<unknown>(null);
   const [file, setFile] = useState<File | null>(null);
 
   const [form, setForm] = useState({
@@ -13,14 +15,17 @@ export default function Admin() {
     item: ""
   });
 
+  const navigate = useNavigate();
+
   // 🔐 Verificar sessão
   useEffect(() => {
-    supabase.auth.getSession().then(({ data }) => {
+    supabase.auth.getSession().then(
+    ({ data }: { data: { session: Session | null } }) => {
       setUser(data.session?.user ?? null);
     });
 
     const { data: listener } = supabase.auth.onAuthStateChange(
-      (_event, session) => {
+      (_event: unknown, session: { user: unknown; }) => {
         setUser(session?.user ?? null);
       }
     );
@@ -96,6 +101,12 @@ export default function Admin() {
       });
 
       setFile(null);
+
+      // 🔐 Deslogar usuário
+      await supabase.auth.signOut();
+
+      // 🔄 Redirecionar para home
+      navigate("../", { replace: true });
     } else {
       console.error("Erro ao salvar projeto:", error);
       alert(`Erro ao salvar projeto: ${error.message}`);
