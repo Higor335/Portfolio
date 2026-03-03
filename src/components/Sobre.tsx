@@ -73,17 +73,14 @@ export default function Sobre() {
 
         <div className="info">
           <h3>
-            Olá, Tudo Bem?<br /> Eu sou o Higor Vital Lopo 👋
+            Olá, Tudo Bem?<br /> Eu sou o Higor Vital Lopo
           </h3>
           <p>
-            Olá, meu nome é Higor e tenho {minhaIdade} anos. Sou formado em{" "}
-            <strong>Sistemas de Informação</strong> aficionado por{" "}
-            <strong className="strong-light-blue">Desenvolvimento Web</strong>,{" "}
-            <strong className="strong-green">Sistemas</strong> e aspirante a{" "}
-            <strong className="strong-dark-purple">Desenvolvedor de Jogos</strong>{" "}
-            👾. Após participar de competições de robótica em tempos de escola e ser
-            recompensado com o prêmio de melhor programação do estado resolvi
-            investir e me dedicar ao que realmente gosto...programar!
+            Olá, meu nome é <strong>Higor</strong>, tenho {minhaIdade} anos e sou formado em{" "}
+            <strong>Sistemas de Informação</strong>, atualmente pós-graduando em{" "}
+            <strong>Desenvolvimento Web Full Stack</strong>. 
+            Atuo com <strong className="strong-dark-purple">desenvolvimento de aplicações web</strong>, <strong className="strong-green">integração com banco de dados</strong> e <strong className="strong-light-blue">automação de processos</strong>, com experiência prática na criação e otimização de portais digitais. 
+            Meu interesse por programação começou ainda na escola, durante competições de robótica em que fui premiado por desempenho em programação, e desde então decidi transformar essa paixão em carreira.
           </p>
           <p className="linguagensTitulo">Linguagens e Tecnologias</p>
           <fieldset className="linguagens">

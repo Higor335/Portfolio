@@ -1,6 +1,6 @@
 #sobre{
     background-color: rgb(0, 0, 68);
-    height: 78vh;
+    height: 81vh;
     left: 0;
     display: block;
     align-items: center;
@@ -15,37 +15,43 @@
 
     hr{
       margin-top: -2vh;
-        width: 45%;
-        margin-left: auto;
-        margin-right: auto;
+      width: 45%;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .bloco{
         display: flex;
+        justify-content: center; /* eixo horizontal */
+        align-items: center;     /* eixo vertical */
 
         .minhaFoto{
-            margin-left: 18%;
+            
             margin-right: 6.5em;
             width: 18vw;
-            height: 50vh;
+            height: 100%;
             border-radius: 10px 40px;
             box-shadow: 4px 4px rgb(255, 255, 255);
         }
 
         .info{
             margin-top: -4vh;
-            display: block;
-            width: 35vw;
+            width: 38vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
             h3{
               font-size: 4vh;
+              align-self: flex-start; /* topo */
             }
             
             p{
-                margin-top: 2rem;
+                
                 text-align: justify;
                 line-height: 2em;
-                font-size: 2vh;
+                font-size: clamp(14px, 1.2vw, 18px);
                 
                 .strong-green {
                     color: rgb(20, 212, 3);
@@ -62,7 +68,6 @@
 
             
             .linguagensTitulo{
-              margin: 0 0 2vh 30%;
               font-size: 1.4em;
               font-weight: bolder;
               color: green;
@@ -83,7 +88,7 @@
 
               img{
                 margin-top: -10px;
-                width: 3.8vw;
+                width: 3.5vw;
                 height: 8vh;
                 transition: width 0.5s, height 0.5s;
                 box-shadow: 0 0 0 1 white;
@@ -104,7 +109,7 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 950px) {
 
     #sobre {
       height: auto; 
