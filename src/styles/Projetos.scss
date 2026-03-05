@@ -51,6 +51,11 @@
         align-items: center; 
         justify-content: center;
 
+
+        .desc{
+            width: 90%;
+            text-align: center;
+        }
         
     
         .botao, h3, p, a {
@@ -94,6 +99,7 @@
                 display: none;
                 opacity: 0; 
             }
+            
 
             .conteudoOculto {
                 display: flex; 
@@ -118,7 +124,6 @@
 
                 p{
                     margin-top: -40%;
-                    margin-left: 15%;
                     margin-bottom: 25px;
                     font-size: 18px;
                     width: 75%;
@@ -171,9 +176,9 @@
                 p{
                     margin-left: 5%;
                     margin-top: -100%;
-                    width: 90%;
+                    width: 80%;
                     font-weight: bolder;
-                    font-size: 17px;
+                    font-size: 18px;
                 }
 
                 .seta{                                             
